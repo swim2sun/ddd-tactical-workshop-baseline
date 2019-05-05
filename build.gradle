@@ -1,0 +1,17 @@
+
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+repositories {
+    maven { url "https://maven.aliyun.com/repository/central" }
+}
+
+dependencies {
+    implementation 'com.google.guava:guava:27.0.1-jre'
+    testImplementation 'junit:junit:4.12'
+}
+
+mainClassName = 'com.thoughtworks.capability.App'
