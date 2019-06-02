@@ -4,11 +4,14 @@
 package com.thoughtworks.capability;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+
+import java.util.Arrays;
+
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class AppTest {
     @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+        assertThat(1).isEqualTo(1);
+        assertThat(Arrays.asList(1, 2)).isEqualTo(Arrays.asList(1, 2));
     }
 }
